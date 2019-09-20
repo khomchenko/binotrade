@@ -11,24 +11,28 @@
 <body>
 
     <header class="header">
-        <div class="header__inner">
-            <div class="header__inner__info">
-                <a href="#" class="logo">
-                    <img src="./assets/images/logo.svg" alt="Logo">
-                </a>
-                <a href="#" class="lang-dropdown">Ru</a>
-                <div class="lang-dropdown--content">
-                    <a href="#">En</a>
-                    <a href="#">Ukr</a>
+        <div class="container-large">
+            <div class="header__inner">
+                <div class="header__inner__info">
+                    <a href="#" class="logo">
+                        <img src="./assets/images/logo.svg" alt="Logo">
+                    </a>
+                    <div class="lang-dropdown">
+                        <span>Ru</span>
+                        <div class="lang-dropdown--content">
+                            <a href="#">En</a>
+                            <a href="#">Ukr</a>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="header__inner__menu">
-                <ul class="menu-primary">
-                    <li><a href="#">Трейдерам</a></li>
-                    <li><a href="#">О компании</a></li>
-                </ul>
-                <a href="#" class="btn btn-login">Вход</a>
-                <a href="#" class="btn btn-registration">Зарегистрироваться</a>
+                <div class="header__inner__menu">
+                    <ul class="menu-primary">
+                        <li><a href="#">Трейдерам</a></li>
+                        <li><a href="#">О компании</a></li>
+                    </ul>
+                    <a href="#" class="btn btn-login">Вход</a>
+                    <a href="#" class="btn btn-registration">Зарегистрироваться</a>
+                </div>
             </div>
         </div>
     </header>
@@ -78,17 +82,24 @@
         <div class="advantages__inner">
             <div class="container">
                 <div class="advantages__inner__tabs">
-                    <button class="btn btn-tab-link active">Минимальный депозит 10$</button>
-                    <button class="btn btn-tab-link">Персональный менеджер</button>
-                    <button class="btn btn-tab-link">Бесплатное обучение</button>
-                    <button class="btn btn-tab-link">Круглосуточная поддержка</button>
+                    <button class="btn btn-tab-link active" data-tab-name="deposit">Минимальный депозит 10$</button>
+                    <button class="btn btn-tab-link" data-tab-name="manager">Персональный менеджер</button>
+                    <button class="btn btn-tab-link" data-tab-name="free">Бесплатное обучение</button>
+                    <button class="btn btn-tab-link" data-tab-name="support">Круглосуточная поддержка</button>
                 </div>
             </div>
             <div class="advantages__inner__content">
                 <div class="container">
-                    <div class="advantages__inner__content__inner">
+                    <div class="advantages__inner__content__inner tab deposit active">
                         <div class="advantages__inner__content__inner__wrap">
                             <h4 class="advantages__inner__content__inner__wrap--title">Минимальный депозит 10$</h4>
+                            <p class="advantages__inner__content__inner__wrap--text">Реальный счет позволит вам зарабатывать реальные деньги. Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет. Минимальный депозит составляет всего 10 $. Это реальный шанс увеличить свой доход!</p>
+                        </div>
+                        <img src="./assets/images/tab-image.svg" alt="Tab image" class="advantages__inner__content__inner--main-img">
+                    </div>
+                    <div class="advantages__inner__content__inner tab manager">
+                        <div class="advantages__inner__content__inner__wrap">
+                            <h4 class="advantages__inner__content__inner__wrap--title">Минимальный</h4>
                             <p class="advantages__inner__content__inner__wrap--text">Реальный счет позволит вам зарабатывать реальные деньги. Для открытия реального счёта необходимо лишь зарегистрироваться и пополнить торговый счет. Минимальный депозит составляет всего 10 $. Это реальный шанс увеличить свой доход!</p>
                         </div>
                         <img src="./assets/images/tab-image.svg" alt="Tab image" class="advantages__inner__content__inner--main-img">
@@ -150,18 +161,21 @@
         <div class="container-large">
             <div class="footer__inner">
                 <ul class="footer__inner__menu menu-large">
+                    <span>Правовая информация</span>
                     <li><a href="#">Положения и условия</a></li>
                     <li><a href="#">Политика по борьбе с отмыванием денег</a></li>
                     <li><a href="#">Политика конфиденциальности</a></li>
                     <li><a href="#">Политика Проведения платежей</a></li>
                 </ul>
                 <ul class="footer__inner__menu menu-medium">
+                    <span>Трейдерам</span>
                     <li><a href="#">Активы</a></li>
                     <li><a href="#">Архив котеровок</a></li>
                     <li><a href="#">Частые вопросы</a></li>
                     <li><a href="#">Обучение</a></li>
                 </ul>
                 <ul class="footer__inner__menu menu-small">
+                    <span>О компании</span>
                     <li><a href="#">Новости</a></li>
                     <li><a href="#">Контакты</a></li>
                 </ul>

@@ -24,6 +24,14 @@
                 display: flex;
                 justify-content: space-between;
 
+                &.tab {
+                    display: none;
+
+                    &.active {
+                        display: flex;
+                    }
+                }
+
                 &__wrap {
                     display: flex;
                     flex-direction: column;

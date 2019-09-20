@@ -1,0 +1,108 @@
+.footer {
+    
+    &__inner {
+        display: flex;
+        background-image: url(../../assets/images/bg-footer.png);
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        padding-top: 16.6rem;
+        padding-bottom: 4.7rem;
+        padding-left: 7.5rem;
+        padding-right: 8.8rem;
+
+        &__menu {
+            display: flex;
+            flex-direction: column;
+            color: #1E2945;
+
+            span {
+                font-size: 1.6rem;
+                line-height: 1.9rem;
+                font-weight: 500;
+                margin-bottom: 5px;
+            }
+
+            li {
+                display: flex;
+                font-size: 1.5rem;
+                line-height: 2.6rem;
+            }
+
+            a {
+                display: flex;
+                text-decoration: none;
+                color: inherit;
+            }
+
+            img {
+                max-width: 100%;
+                height: inherit;
+            }
+
+            &.menu-large {
+                margin-right: 8.9rem;
+            }
+
+            &.menu-medium {
+                margin-right: 9.7rem;
+            }
+
+            &.menu-small {
+                margin-right: 8.9rem;
+            }
+
+            &.menu-apps {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                margin-right: 7.9rem;
+
+                li {
+                    margin-right: 1rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+
+        &__menu-info {
+            display: flex;
+            flex-direction: column;
+
+            &__social {
+                display: flex;
+                margin-bottom: 4.4rem;
+
+                li {
+                    display: flex;
+                    margin-right: 8px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 38px;
+                    height: 38px;
+                    background: linear-gradient(316.02deg, #1ACBFD -79.1%, #345AFF 95.81%);
+                    border-radius: 6px;
+                }
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            &--img {
+                max-width: 100%;
+                height: inherit;
+            }
+        }
+    }
+}
