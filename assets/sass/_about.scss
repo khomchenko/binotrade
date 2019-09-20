@@ -1,0 +1,32 @@
+.about {
+    margin-top: 21rem;
+    margin-bottom: 12.2rem;
+
+    &__inner {
+        margin-left: 8rem;
+        color: #1E2945;
+
+        &__title {
+            font-size: 4rem;
+            line-height: 3.9rem;
+            letter-spacing: 0.0888889px;
+            margin-bottom: 3.5rem;
+        }
+
+        &__wrap {
+            display: flex;
+            flex-wrap: wrap;
+
+            &--text {
+                max-width: 59rem;
+                width: 100%;
+                margin-right: 6.5rem;
+
+                &:nth-child(even) {
+                    max-width: 46rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

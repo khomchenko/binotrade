@@ -50,7 +50,7 @@ body {
     font-weight: normal;
     line-height: 2.6rem;
     color: var(--color-black);
-    background-color: var(--color-white);
+    background-color: #F2F2F2;
     min-height: 100vh;
     position: relative;
 
@@ -61,7 +61,17 @@ body {
 }
 
 .container {
-    max-width: 117rem;
+    max-width: 104rem;
     width: 100%;
     margin: 0 auto;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
+}
+
+.container-large {
+    max-width: 144rem;
+    width: 100%;
+    margin: 0 auto;
+    border-left: 1px solid red;
+    border-right: 1px solid red;
 }

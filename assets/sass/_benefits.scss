@@ -1,0 +1,93 @@
+.benefits {
+    margin-top: -17.9rem;
+    background-color: transparent;
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--color-white);
+        padding: 0 13.5rem;
+        padding-top: 7.3rem;
+        padding-bottom: 7.7rem;
+        box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.03);
+        border-radius: 6px;
+
+        &__block {
+            display: flex;
+            align-items: center;
+            width: 50%;
+
+            &:nth-child(n+3) {
+                margin-top: 12rem;
+            }
+
+            &.rose {
+
+                .benefits__inner__block__img {
+                    background: linear-gradient(315deg, #FF7676 0%, #F54EA2 100%);
+                }
+
+                .benefits__inner__block--text {
+                    max-width: 21rem;
+                    width: 100%;
+                }
+            }
+
+            &.orange {
+
+                .benefits__inner__block__img {
+                    background: linear-gradient(310.68deg, #FCE38A 4.65%, #F38181 90.07%);
+                }
+
+                .benefits__inner__block--text {
+                    max-width: 22rem;
+                    width: 100%;
+                }
+            }
+
+            &.blue {
+
+                .benefits__inner__block__img {
+                    background: linear-gradient(315deg, rgba(23, 234, 217, 0.1) 0%, #22D9DB 34.08%, #6078EA 100%);
+                }
+                
+                .benefits__inner__block--text {
+                    max-width: 25rem;
+                    width: 100%;
+                }
+            }
+
+            &.green {
+
+                .benefits__inner__block__img {
+                    background: linear-gradient(135deg, #43E695 0%, #3BB2B8 100%);
+                }
+
+                .benefits__inner__block--text {
+                    max-width: 25rem;
+                    width: 100%;
+                }
+            }
+
+            &__img {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 48px;
+                height: 48px;
+                border-radius: 4px;
+
+                img {
+                    max-width: 100%;
+                }
+            }
+
+            &--text {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                color: #1E2945;
+                margin-left: 2.1rem;
+            }
+        }
+    }
+}

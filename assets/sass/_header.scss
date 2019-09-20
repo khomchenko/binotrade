@@ -1,0 +1,91 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 3.1rem 0;
+    padding-left: 5.2rem;
+    padding-right: 5rem;
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+
+        &__info {
+            display: flex;
+            align-items: center;
+            color: var(--color-white);
+
+            .logo {
+                display: flex;
+                max-width: 100%;
+                height: inherit;
+            }
+
+            .lang-dropdown {
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                margin-left: 2.7rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: inherit;
+                position: relative;
+
+                &::after {
+                    content: url(../../assets/images/arrow-lang.svg);
+                    position: absolute;
+                    top: -3px;
+                    right: -10px;
+                }
+
+                &::before {
+                    content: '';
+                    display: block;
+                    width: 1px;
+                    height: 20px;
+                    background-color: rgba($color: #ffffff, $alpha: 0.2);
+                    position: absolute;
+                    top: -1px;
+                    left: -12px;
+                }
+
+                &--content {
+                    display: none;
+
+                    a {
+
+                    }
+                }
+            }
+        }
+
+        &__menu {
+            display: flex;
+            align-items: center;
+
+            .menu-primary {
+                display: flex;
+                color: var(--color-white);
+                list-style: none;
+                margin-right: 6.2rem;
+
+                li {
+                    display: flex;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    margin-right: 3.1rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
+        }
+    }
+}

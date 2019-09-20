@@ -1,0 +1,65 @@
+.btn {
+    display: inline-block;
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+
+    &-hero {
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        padding: 0 5rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.6rem;
+        color: var(--color-white);
+        background: linear-gradient(180.4deg, #00F9FF 1.52%, #00D0F1 122.12%);
+        box-shadow: 0px 8px 14px rgba(0, 107, 206, 0.3);
+        border-radius: 4px;
+    }
+
+    &-login,
+    &-registration {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        color: var(--color-white);
+    }
+
+    &-login {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 1px;
+            height: 30px;
+            background-color: rgba($color: #ffffff, $alpha: 0.2);
+            position: absolute;
+            left: -2.9rem;
+        }
+    }
+
+    &-registration {
+        padding: 0 1.1rem;
+        padding-top: .5rem;
+        padding-bottom: .7rem;
+        border: 1px solid var(--color-white);
+        border-radius: 4px;
+        margin-left: 20px;
+    }
+
+    &-tab-link {
+        font-size: 1.5rem;
+        line-height: 1.8rem;
+        padding: 1.6rem 0;
+        padding-left: 3.5rem;
+        padding-right: 2.7rem;
+
+        &.active {
+            border-bottom: 2px solid #2E73FE;
+            color: #2E73FE;
+        }
+    }
+}

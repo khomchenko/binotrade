@@ -1,0 +1,36 @@
+.partners {
+    padding-top: 15.1rem;
+    padding-bottom: 18.6rem;
+    background-color: var(--color-white);
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+
+        &__title {
+            font-size: 4rem;
+            line-height: 5rem;
+            text-align: center;
+            letter-spacing: 0.0888889px;
+            color: #1E2945;
+            margin-bottom: 3rem;
+        }
+
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__block {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+            }
+
+            &--img {
+                max-width: 100%;
+            }
+        }
+    }
+}

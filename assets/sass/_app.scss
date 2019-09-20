@@ -1,0 +1,41 @@
+.app {
+    margin-top: 13.8rem;
+
+    &__inner {
+        display: flex;
+        background-image: url(../../assets/images/bg-app.png);
+        background-repeat: no-repeat;
+        background-position: 0 14.5rem;
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            color: var(--color-white);
+            margin-top: 35.2rem;
+            margin-bottom: 31rem;
+            margin-left: 14rem;
+            margin-right: 4.4rem;
+
+            &--title {
+                font-size: 4rem;
+                line-height: 3.9rem;
+                letter-spacing: 0.0888889px;
+                max-width: 41.2rem;
+                width: 100%;
+                margin-bottom: 1.5rem;
+            }
+
+            &--text {
+                font-size: 1.8rem;
+                line-height: 2.6rem;
+                max-width: 39rem;
+                width: 100%;
+            }
+        }
+
+        &--img {
+            max-width: 100%;
+            height: inherit;
+        }
+    }
+}
