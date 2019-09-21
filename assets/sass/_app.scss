@@ -5,7 +5,7 @@
         display: flex;
         background-image: url(../../assets/images/bg-app.png);
         background-repeat: no-repeat;
-        background-position: 0 14.5rem;
+        background-position: 0 14.3rem;
 
         &__info {
             display: flex;
@@ -18,11 +18,12 @@
 
             &--title {
                 font-size: 4rem;
-                line-height: 3.9rem;
+                line-height: 4rem;
                 letter-spacing: 0.0888889px;
                 max-width: 41.2rem;
                 width: 100%;
-                margin-bottom: 1.5rem;
+                margin-top: -2px;
+                margin-bottom: 1.4rem;
             }
 
             &--text {
@@ -30,12 +31,15 @@
                 line-height: 2.6rem;
                 max-width: 39rem;
                 width: 100%;
+                margin-left: 2px;
             }
         }
 
         &--img {
+            margin-top: -.7rem;
+            margin-left: -.9rem;
             max-width: 100%;
-            height: inherit;
+            height: fit-content;
         }
     }
 }

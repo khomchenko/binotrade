@@ -64,14 +64,22 @@ body {
     max-width: 104rem;
     width: 100%;
     margin: 0 auto;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
 }
 
 .container-large {
     max-width: 144rem;
     width: 100%;
     margin: 0 auto;
-    border-left: 1px solid red;
-    border-right: 1px solid red;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
 }

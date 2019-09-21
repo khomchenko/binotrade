@@ -1,5 +1,5 @@
 .about {
-    margin-top: 21rem;
+    margin-top: 20rem;
     margin-bottom: 12.2rem;
 
     &__inner {
@@ -11,6 +11,7 @@
             line-height: 3.9rem;
             letter-spacing: 0.0888889px;
             margin-bottom: 3.5rem;
+            margin-left: -1px;
         }
 
         &__wrap {
@@ -18,12 +19,13 @@
             flex-wrap: wrap;
 
             &--text {
-                max-width: 49rem;
+                font-size: 1.8rem;
+                max-width: 55rem;
                 width: 100%;
-                margin-right: 6.5rem;
+                margin-right: 6.9rem;
 
                 &:nth-child(even) {
-                    max-width: 46rem;
+                    max-width: 50rem;
                     width: 100%;
                 }
             }

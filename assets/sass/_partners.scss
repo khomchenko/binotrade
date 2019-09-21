@@ -13,23 +13,75 @@
             text-align: center;
             letter-spacing: 0.0888889px;
             color: #1E2945;
-            margin-bottom: 3rem;
+            margin-bottom: 2.4rem;
         }
 
         &__wrap {
             display: flex;
             flex-direction: column;
-            align-items: center;
 
             &__block {
                 display: flex;
-                justify-content: space-around;
                 align-items: center;
                 width: 100%;
+            
+                &:nth-child(2) {
+                    margin-top: -2rem;
+                }
             }
 
             &--img {
                 max-width: 100%;
+
+                &.badoo {
+                    margin-top: -6px;
+                    margin-left: 3.7rem;
+                }
+
+                &.tesla {
+                    margin-top: -2px;
+                    margin-left: 4.5rem;
+                }
+
+                &.gillette {
+                    margin-top: 6px;
+                    margin-left: 8.1rem;
+                }
+
+                &.coca-cola {
+                    margin-top: -5px;
+                    margin-left: 8.6rem;
+                }
+
+                &.netflix {
+                    margin-top: 4px;
+                    margin-left: 5.5rem;
+                }
+
+                &.microsoft {
+                    margin-top: -3px;
+                    margin-left: 6.3rem;
+                }
+
+                &.walt-disney {
+                    margin-top: 3px;
+                    margin-left: 5.8rem;
+                }
+                
+                &.facebook {
+                    margin-top: -2px;
+                    margin-left: 7.4rem;
+                }
+
+                &.google {
+                    margin-top: 6px;
+                    margin-left: 6.5rem;
+                }
+
+                &.toyota {
+                    margin-top: 6px;
+                    margin-left: 5.1rem;
+                }
             }
         }
     }

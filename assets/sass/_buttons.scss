@@ -16,6 +16,34 @@
         background: linear-gradient(180.4deg, #00F9FF 1.52%, #00D0F1 122.12%);
         box-shadow: 0px 8px 14px rgba(0, 107, 206, 0.3);
         border-radius: 4px;
+        position: relative;
+        animation: moveInBottom .5s ease-out .75s;
+        animation-fill-mode: backwards;
+        transition: all .4s;
+
+        &:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 1rem 2rem rgba(var(--color-black), .2);
+    
+            &::after {
+                transform: scaleX(1.4) scaleY(1.6);
+                opacity: 0;
+            }
+        }
+
+        &::after {
+            content: "";
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            border-radius: 4px;
+            background: linear-gradient(180.4deg, #00F9FF 1.52%, #00D0F1 122.12%);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: all .4s;
+        }
     }
 
     &-login,
@@ -39,15 +67,39 @@
             position: absolute;
             left: -2.9rem;
         }
+
+        &::after {
+            content: '';
+            display: block;
+            background-color: var(--color-white);
+            width: 0;
+            height: 1px;
+            position: absolute;
+            bottom: -3px;
+            transition: all .3s ease;
+        }
+
+        &:hover {
+            
+            &::after {
+                width: 100%;
+            }
+        }
     }
 
     &-registration {
         padding: 0 1.1rem;
         padding-top: .5rem;
         padding-bottom: .7rem;
+        background: transparent;
         border: 1px solid var(--color-white);
         border-radius: 4px;
         margin-left: 20px;
+        transition: all .3s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+        }
     }
 
     &-tab-link {
@@ -56,10 +108,35 @@
         padding: 1.6rem 0;
         padding-left: 3.5rem;
         padding-right: 2.7rem;
+        position: relative;
+        transition: all .3s ease;
+
+        &[data-tab-name="deposit"] {
+            margin-right: .4rem;
+        }
+
+        &[data-tab-name="free"] {
+            margin-left: 1rem;
+        }
+
+        &[data-tab-name="support"] {
+            margin-left: 1rem;
+        }
 
         &.active {
-            border-bottom: 2px solid #2E73FE;
             color: #2E73FE;
+            transition: all .3s ease;
+
+            &::after {
+                content: '';
+                display: inline-block;
+                background-color: #2E73FE;
+                width: 100%;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: 0;
+            }
         }
     }
 }

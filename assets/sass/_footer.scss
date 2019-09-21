@@ -5,7 +5,7 @@
         background-image: url(../../assets/images/bg-footer.png);
         background-repeat: no-repeat;
         background-position: 0 0;
-        padding-top: 16.6rem;
+        padding-top: 16rem;
         padding-bottom: 4.7rem;
         padding-left: 7.5rem;
         padding-right: 8.8rem;
@@ -40,7 +40,7 @@
             }
 
             &.menu-large {
-                margin-right: 8.9rem;
+                margin-right: 9rem;
             }
 
             &.menu-medium {
@@ -55,13 +55,20 @@
                 display: flex;
                 flex-direction: row;
                 align-items: flex-start;
+                margin-left: 2px;
                 margin-right: 7.9rem;
 
                 li {
+                    margin-top: 4px;
                     margin-right: 1rem;
+                    transition: all .3s ease;
 
                     &:last-child {
                         margin-right: 0;
+                    }
+
+                    &:hover {
+                        transform: translateY(-3px);
                     }
                 }
             }
@@ -73,14 +80,20 @@
 
             &__social {
                 display: flex;
+                margin-top: 4px;
                 margin-bottom: 4.4rem;
 
                 li {
                     display: flex;
                     margin-right: 8px;
+                    transition: all .3s ease;
 
                     &:last-child {
                         margin-right: 0;
+                    }
+
+                    &:hover {
+                        transform: translateY(-3px);
                     }
                 }
 
