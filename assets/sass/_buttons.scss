@@ -139,4 +139,12 @@
             }
         }
     }
+
+    &-hamburger {
+        display: none;
+
+        &-close {
+            display: none;
+        }
+    }
 }

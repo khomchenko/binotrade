@@ -24,3 +24,19 @@ let tab = function() {
     }
 }
 tab();
+
+// Hamburger
+let $hamburger = document.querySelector('.btn-hamburger');
+let $hamburgerClose = document.querySelector('.btn-hamburger-close');
+let $navMobile = document.querySelector('.nav-mobile');
+
+$hamburger.addEventListener('click', function() {
+    $navMobile.classList.add('active');
+})
+
+$hamburgerClose.addEventListener('click', function() {
+    $navMobile.classList.remove('active');
+})
+
+// WOW
+new WOW().init();

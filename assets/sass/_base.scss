@@ -72,6 +72,10 @@ body {
     margin: 0 auto;
 }
 
+.wow {
+    animation-duration: 1s;
+}
+
 @keyframes moveInBottom {
     0% {
         opacity: 0;

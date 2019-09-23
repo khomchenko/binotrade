@@ -6,9 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Binotrade</title>
 
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
+    <nav class="nav-mobile">
+        <button class="btn btn-hamburger-close">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2.14282" width="25.2538" height="3.03046" rx="1.51523" transform="rotate(45 2.14282 0)" fill="white"/>
+                <rect y="17.8572" width="25.2538" height="3.03046" rx="1.51523" transform="rotate(-45 0 17.8572)" fill="white"/>
+            </svg>                    
+        </button>
+        <ul>
+            <li><a href="#">Трейдерам</a></li>
+            <li><a href="#">О компании</a></li>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Зарегистрироваться</a></li>
+        </ul>
+    </nav>
 
     <header class="header">
         <div class="container-large">
@@ -33,6 +49,13 @@
                     <a href="#" class="btn btn-login">Войти</a>
                     <a href="#" class="btn btn-registration">Зарегистрироваться</a>
                 </div>
+                <button class="btn btn-hamburger">
+                    <svg width="25" height="19" viewBox="0 0 25 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="25" height="3" rx="1.5" fill="white"/>
+                        <rect y="8" width="25" height="3" rx="1.5" fill="white"/>
+                        <rect y="16" width="25" height="3" rx="1.5" fill="white"/>
+                    </svg>                            
+                </button>
             </div>
         </div>
     </header>
@@ -40,7 +63,7 @@
     <section class="hero">
         <div class="container">
             <div class="hero__inner">
-                <h1 class="hero__inner__title">Простой инструмент для онлайн торговли</h1>
+                <h1 class="hero__inner__title wow bounceInDown">Простой инструмент для онлайн торговли</h1>
                 <p class="hero__inner__sub-title">Первая прибыль через 1 минуту</p>
                 <a href="#" class="btn btn-hero">Начать торговать</a>
             </div>
@@ -82,14 +105,14 @@
         <div class="container-large">
             <div class="advantages__inner">
                 <div class="container">
-                    <div class="advantages__inner__tabs">
+                    <div class="advantages__inner__tabs wow fadeInDown">
                         <button class="btn btn-tab-link active" data-tab-name="deposit">Минимальный депозит 10$</button>
                         <button class="btn btn-tab-link" data-tab-name="manager">Персональный менеджер</button>
                         <button class="btn btn-tab-link" data-tab-name="free">Бесплатное обучение</button>
                         <button class="btn btn-tab-link" data-tab-name="support">Круглосуточная поддержка</button>
                     </div>
                 </div>
-                <div class="advantages__inner__content">
+                <div class="advantages__inner__content wow fadeIn" data-wow-duration="1s" data-wow-delay=".5s">
                     <div class="container">
                         <div class="advantages__inner__content__inner tab deposit active">
                             <div class="advantages__inner__content__inner__wrap">
@@ -128,8 +151,8 @@
     <section class="partners">
         <div class="container">
             <div class="partners__inner">
-                <h4 class="partners__inner__title">Более 50 проверенных активов</h4>
-                <div class="partners__inner__wrap">
+                <h4 class="partners__inner__title wow flipInX">Более 50 проверенных активов</h4>
+                <div class="partners__inner__wrap wow fadeIn" data-wow-delay=".5s">
                     <div class="partners__inner__wrap__block">
                         <img src="./assets/images/partners/badoo.png" alt="Badoo" class="partners__inner__wrap--img badoo">
                         <img src="./assets/images/partners/tesla.png" alt="Tesla" class="partners__inner__wrap--img tesla">
@@ -152,11 +175,11 @@
     <section class="app">
         <div class="container-large">
             <div class="app__inner">
-                <div class="app__inner__info">
+                <div class="app__inner__info wow fadeIn">
                     <h4 class="app__inner__info--title">Мобильные приложения</h4>
                     <p class="app__inner__info--text">Торговля на нескольких графиках, технический анализ, история котировок и многое другое. Все, что вам нужно на платформе, доступно<br> на любом устройстве по вашему выбору.</p>
                 </div>
-                <img src="./assets/images/mobile.png" alt="Mobile" class="app__inner--img">
+                <img src="./assets/images/mobile.png" alt="Mobile" class="app__inner--img wow fadeInUp">
             </div>
         </div>
     </section>
@@ -164,8 +187,8 @@
     <section class="about">
         <div class="container-large">
             <div class="about__inner">
-                <h4 class="about__inner__title">Binotrade.com — бинарный опцион с личным помощником</h4>
-                <div class="about__inner__wrap">
+                <h4 class="about__inner__title wow fadeInDown">Binotrade.com — бинарный опцион с личным помощником</h4>
+                <div class="about__inner__wrap wow fadeIn">
                     <p class="about__inner__wrap--text">Binotrade - это торговая платформа, удобный инструмент, который предлагает не только возможность заработать с помощью торговли бинарными опционами, но и предоставляет профессиональный клиентский сервис. Сразу после регистрации на Binotrade.com, каждый клиент получает личного консультанта.</p>
                     <p class="about__inner__wrap--text">Вам нужен совет по торговле активами или вы не можете подобрать подходящую торговую стратегию? Обратитесь к вашему личному консультанту, который поможет вам в решении вопроса. Вам не нужен статус VIP-клиента, чтобы пользоваться квалифицированным клиентским сервисом!</p>
                 </div>
@@ -212,6 +235,7 @@
         </div>
     </footer>
 
+    <script src="./assets/js/wow.min.js"></script>
     <script src="./assets/js/main.js"></script>
 </body>
 </html>
