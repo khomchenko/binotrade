@@ -494,7 +494,23 @@ body {
         .header__inner__menu .menu-primary a {
           display: flex;
           text-decoration: none;
-          color: inherit; }
+          color: inherit;
+          position: relative;
+          overflow: hidden; }
+          .header__inner__menu .menu-primary a::after {
+            content: '';
+            display: block;
+            background-color: var(--color-white);
+            width: 100%;
+            height: 1px;
+            transform: translateX(120%);
+            visibility: hidden;
+            position: absolute;
+            bottom: 0;
+            transition: all .3s ease; }
+          .header__inner__menu .menu-primary a:hover::after {
+            transform: translateX(0);
+            visibility: visible; }
 
 .hero {
   background-image: url(../../assets/images/bg-hero.png);
@@ -517,12 +533,14 @@ body {
       font-weight: 500;
       text-align: center;
       letter-spacing: 0.155555px;
+      text-align: center;
       margin-bottom: 1.9rem; }
     .hero__inner__sub-title {
       font-size: 2.4rem;
       line-height: 2.9rem;
       letter-spacing: 0.36px;
-      margin-bottom: 3.2rem; }
+      margin-bottom: 3.2rem;
+      text-align: center; }
 
 .benefits {
   margin-top: -17.9rem;
@@ -827,3 +845,236 @@ body {
     .footer__inner__menu-info--img {
       max-width: 100%;
       height: inherit; }
+
+@media screen and (max-width: 1150px) {
+  .header__inner {
+    padding: 0 5rem; }
+  .advantages {
+    margin-bottom: 0; }
+  .about__inner {
+    margin: 0 5rem; }
+  .about__inner__wrap--text {
+    max-width: unset;
+    margin-right: 0; }
+    .about__inner__wrap--text:nth-child(even) {
+      max-width: unset; }
+  .footer__inner {
+    flex-wrap: wrap;
+    justify-content: center; }
+  .footer__inner__menu {
+    align-items: center;
+    width: calc(33.3333% - 2rem); }
+    .footer__inner__menu.menu-large {
+      margin-right: 0; }
+    .footer__inner__menu.menu-medium {
+      margin: 0 1rem; }
+    .footer__inner__menu.menu-small {
+      margin-right: 0; }
+    .footer__inner__menu.menu-apps {
+      margin-top: 3.5rem;
+      width: fit-content; }
+    .footer__inner__menu-info {
+      flex-direction: row;
+      align-items: center;
+      margin-top: 3.5rem; }
+      .footer__inner__menu-info__social {
+        margin: 0; }
+      .footer__inner__menu-info--img {
+        margin-left: 4rem; }
+    .footer__inner__menu li {
+      text-align: center; } }
+
+@media screen and (max-width: 1040px) {
+  .hero__inner {
+    padding-top: 20rem;
+    padding-bottom: 30rem;
+    padding-left: 5rem;
+    padding-right: 5rem; }
+  .benefits__inner {
+    justify-content: space-between;
+    padding: 7rem 5rem; }
+    .benefits__inner__block {
+      width: 40%;
+      justify-content: space-between; }
+      .benefits__inner__block__img {
+        min-width: 48px; }
+      .benefits__inner__block:nth-child(n+3) {
+        margin-top: 5rem; }
+      .benefits__inner__block--text {
+        text-align: right; }
+  .advantages {
+    margin-top: 9rem; }
+    .advantages__inner__tabs {
+      justify-content: space-between;
+      padding-left: 0; }
+      .advantages__inner__tabs button {
+        margin: 0 10px; }
+        .advantages__inner__tabs button[data-tab-name="deposit"], .advantages__inner__tabs button[data-tab-name="support"], .advantages__inner__tabs button[data-tab-name="free"] {
+          margin-right: 10px; }
+    .advantages__inner__content__inner {
+      padding: 0 2rem; }
+      .advantages__inner__content__inner--main-img {
+        max-width: unset;
+        width: 40%;
+        margin-right: 0; }
+  .partners {
+    padding: 7rem 0; }
+    .partners__inner__wrap__block {
+      justify-content: space-between; }
+    .partners__inner__wrap--img {
+      max-width: unset;
+      width: 15%; }
+      .partners__inner__wrap--img.badoo, .partners__inner__wrap--img.tesla, .partners__inner__wrap--img.gillette, .partners__inner__wrap--img.coca-cola, .partners__inner__wrap--img.netflix, .partners__inner__wrap--img.microsoft, .partners__inner__wrap--img.walt-disney, .partners__inner__wrap--img.facebook, .partners__inner__wrap--img.google, .partners__inner__wrap--img.toyota {
+        margin: 0 10px; }
+  .app {
+    margin-top: 0; }
+    .app__inner {
+      padding: 0 5rem;
+      padding-top: 30rem;
+      padding-bottom: 8rem; }
+      .app__inner--img {
+        width: 55%;
+        max-width: unset;
+        height: unset;
+        margin-top: -6rem; }
+      .app__inner__info {
+        margin: 0;
+        justify-content: center; }
+  .about {
+    margin-top: 5rem;
+    margin-bottom: 1.5rem; }
+  .footer__inner {
+    padding: 5rem;
+    padding-top: 13rem; } }
+
+@media screen and (max-width: 780px) {
+  .footer {
+    margin-top: -12rem; }
+    .footer__inner {
+      padding-top: 23rem;
+      background-position: -5rem bottom;
+      background-size: cover; }
+      .footer__inner__menu.menu-apps {
+        justify-content: center;
+        width: 100%;
+        margin-right: 0; }
+      .footer__inner__menu-info {
+        flex-direction: column; }
+        .footer__inner__menu-info--img {
+          margin-left: 0;
+          margin-top: 2rem; } }
+
+@media screen and (max-width: 710px) {
+  .header__inner {
+    padding: 0 2rem; }
+    .header__inner__menu {
+      display: none; }
+  .hero__inner {
+    padding-top: 13rem;
+    padding-bottom: 10rem;
+    padding-left: 5rem;
+    padding-right: 5rem; }
+    .hero__inner__title {
+      font-size: 5rem;
+      line-height: normal; }
+  .benefits {
+    margin-top: -5rem; }
+    .benefits__inner {
+      flex-direction: column;
+      width: fit-content;
+      padding: 4rem 5rem;
+      margin: 0 auto; }
+      .benefits__inner__block {
+        width: 100%;
+        margin-bottom: 2rem; }
+        .benefits__inner__block:last-child {
+          margin-bottom: 0; }
+        .benefits__inner__block:nth-child(n+3) {
+          margin-top: 0; }
+        .benefits__inner__block:nth-child(even) {
+          margin-top: 0; }
+          .benefits__inner__block:nth-child(even) .benefits__inner__block__img {
+            margin-left: 0; }
+        .benefits__inner__block__img {
+          min-width: 48px; }
+        .benefits__inner__block--text {
+          text-align: right; }
+  .advantages__inner {
+    background-position: -6rem 12.4rem; }
+    .advantages__inner__content__inner__wrap {
+      padding: 0;
+      padding-bottom: 5rem;
+      width: 100%; }
+      .advantages__inner__content__inner__wrap--title {
+        max-width: unset;
+        text-align: center; }
+      .advantages__inner__content__inner__wrap--text {
+        max-width: unset;
+        text-align: justify;
+        margin-left: 0; }
+        .advantages__inner__content__inner__wrap--text br {
+          display: none; }
+    .advantages__inner__content__inner--main-img {
+      display: none; }
+  .partners__inner {
+    padding: 0 2rem; } }
+
+@media screen and (max-width: 620px) {
+  .advantages__inner {
+    background-position: -6rem 12.4rem; }
+    .advantages__inner__tabs {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 5rem; }
+      .advantages__inner__tabs button {
+        width: calc(50% - 20px);
+        padding: 13px 5px; }
+  .partners__inner__wrap__block {
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+    .partners__inner__wrap__block:nth-child(2) {
+      margin-top: 0rem; }
+  .partners__inner__wrap--img {
+    width: 23%;
+    height: 50px;
+    object-fit: contain; }
+  .app {
+    position: relative; }
+    .app__inner {
+      flex-direction: column;
+      background-position: 0 3.3rem;
+      padding-top: 23rem;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      .app__inner--img {
+        width: 28%;
+        position: absolute;
+        top: 15rem;
+        right: 2rem; }
+      .app__inner__info--text {
+        text-align: justify; }
+        .app__inner__info--text br {
+          display: none; }
+  .about__inner {
+    margin: 0 2rem; }
+    .about__inner__title {
+      font-size: 3rem;
+      line-height: normal; }
+    .about__inner__wrap--text {
+      text-align: justify; }
+  .footer {
+    margin-top: -24rem; }
+    .footer__inner {
+      padding-top: 32rem; }
+      .footer__inner__menu {
+        width: 100%;
+        margin-bottom: 2rem; }
+        .footer__inner__menu.menu-medium {
+          margin: 0;
+          margin-bottom: 2rem; }
+        .footer__inner__menu.menu-apps {
+          margin: 0;
+          margin-bottom: 2rem; }
+        .footer__inner__menu-info {
+          margin: 0;
+          margin-top: 2rem; } }
