@@ -1,11 +1,11 @@
 .app {
+    background-image: url(../../assets/images/bg-app.svg);
+    background-repeat: no-repeat;
+    background-position: 0 14.3rem;
     margin-top: 13.8rem;
 
     &__inner {
         display: flex;
-        background-image: url(../../assets/images/bg-app.svg);
-        background-repeat: no-repeat;
-        background-position: 0 14.3rem;
 
         &__info {
             display: flex;
@@ -40,6 +40,12 @@
             margin-left: -.9rem;
             max-width: 100%;
             height: fit-content;
+            transform: scale(1);
+            transition: all .3s ease;
+
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }

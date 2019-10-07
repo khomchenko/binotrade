@@ -575,6 +575,9 @@ body {
       top: 0;
       left: 50%;
       transform: translateX(-50%); }
+      @media screen and (max-width: 600px) {
+        .benefits__inner::after {
+          display: none; } }
     .benefits__inner::before {
       content: '';
       display: block;
@@ -586,6 +589,9 @@ body {
       left: 0;
       right: 0;
       transform: translateY(-50%); }
+      @media screen and (max-width: 600px) {
+        .benefits__inner::before {
+          display: none; } }
     .benefits__inner__block {
       display: flex;
       align-items: center;
@@ -649,14 +655,20 @@ body {
       border-radius: 4px; }
     .advantages__inner__content {
       display: flex;
-      margin-top: 7.4rem; }
+      padding-top: 7.4rem;
+      position: relative; }
       .advantages__inner__content__inner {
         display: flex;
         justify-content: space-between; }
         .advantages__inner__content__inner.tab {
-          display: none; }
+          height: 0;
+          transform: translateX(-200%);
+          visibility: hidden;
+          transition: transform .3s ease; }
           .advantages__inner__content__inner.tab.active {
-            display: flex; }
+            height: 100%;
+            transform: translateX(0);
+            visibility: visible; }
         .advantages__inner__content__inner__wrap {
           display: flex;
           flex-direction: column;
@@ -678,8 +690,9 @@ body {
             margin-top: 11px;
             margin-left: 4px; }
         .advantages__inner__content__inner--main-img {
-          max-width: 100%;
-          height: inherit;
+          max-width: 53rem;
+          width: 100%;
+          height: 59.4rem;
           margin-top: -6.3rem;
           margin-right: 1.5rem; }
 
@@ -707,7 +720,11 @@ body {
         .partners__inner__wrap__block:nth-child(2) {
           margin-top: -2rem; }
       .partners__inner__wrap--img {
-        max-width: 100%; }
+        max-width: 100%;
+        transform: scale(1);
+        transition: all .3s ease; }
+        .partners__inner__wrap--img:hover {
+          transform: scale(1.5); }
         .partners__inner__wrap--img.badoo {
           margin-top: -6px;
           margin-left: 3.7rem; }
@@ -740,12 +757,12 @@ body {
           margin-left: 5.1rem; }
 
 .app {
+  background-image: url(../../assets/images/bg-app.svg);
+  background-repeat: no-repeat;
+  background-position: 0 14.3rem;
   margin-top: 13.8rem; }
   .app__inner {
-    display: flex;
-    background-image: url(../../assets/images/bg-app.svg);
-    background-repeat: no-repeat;
-    background-position: 0 14.3rem; }
+    display: flex; }
     .app__inner__info {
       display: flex;
       flex-direction: column;
@@ -772,7 +789,11 @@ body {
       margin-top: -.7rem;
       margin-left: -.9rem;
       max-width: 100%;
-      height: fit-content; }
+      height: fit-content;
+      transform: scale(1);
+      transition: all .3s ease; }
+      .app__inner--img:hover {
+        transform: scale(1.1); }
 
 .about {
   margin-top: 20rem;
@@ -819,7 +840,13 @@ body {
     .footer__inner__menu li {
       display: flex;
       font-size: 1.5rem;
-      line-height: 2.6rem; }
+      line-height: 2.6rem;
+      width: fit-content;
+      transform: scale(1) rotate(0);
+      transition: all .3s ease; }
+      .footer__inner__menu li:hover {
+        transform: scale(1.2) rotate(5deg);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4); }
     .footer__inner__menu a {
       display: flex;
       text-decoration: none;
@@ -874,7 +901,10 @@ body {
         max-width: 100%; }
     .footer__inner__menu-info--img {
       max-width: 100%;
-      height: inherit; }
+      height: inherit;
+      transition: all .3s ease; }
+      .footer__inner__menu-info--img:hover {
+        filter: hue-rotate(110deg); }
 
 .nav-mobile {
   display: none; }
@@ -1111,10 +1141,10 @@ body {
     height: 50px;
     object-fit: contain; }
   .app {
-    position: relative; }
+    position: relative;
+    background-position: 0 3.3rem; }
     .app__inner {
       flex-direction: column;
-      background-position: 0 3.3rem;
       padding-top: 23rem;
       padding-left: 2rem;
       padding-right: 2rem; }

@@ -452,10 +452,10 @@
     // APP
     .app {
         position: relative;
+        background-position: 0 3.3rem;
 
         &__inner {
             flex-direction: column;
-            background-position: 0 3.3rem;
             padding-top: 23rem;
             padding-left: 2rem;
             padding-right: 2rem;

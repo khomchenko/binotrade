@@ -26,6 +26,10 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
+
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
         }
 
         &::before {
@@ -39,6 +43,10 @@
             left: 0;
             right: 0;
             transform: translateY(-50%);
+
+            @media screen and (max-width: 600px) {
+                display: none;
+            }
         }
 
         &__block {

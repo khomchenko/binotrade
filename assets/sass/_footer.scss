@@ -26,6 +26,14 @@
                 display: flex;
                 font-size: 1.5rem;
                 line-height: 2.6rem;
+                width: fit-content;
+                transform: scale(1) rotate(0);
+                transition: all .3s ease;
+
+                &:hover {
+                    transform: scale(1.2) rotate(5deg);
+                    box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+                }
             }
 
             a {
@@ -115,6 +123,11 @@
             &--img {
                 max-width: 100%;
                 height: inherit;
+                transition: all .3s ease;
+
+                &:hover {
+                    filter: hue-rotate(110deg);
+                }
             }
         }
     }
